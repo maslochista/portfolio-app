@@ -142,6 +142,7 @@ function Menu(props) {
           <div className="work-description blue-box-shadow">
             <p>My story with coding started in high school with Pascal, though we didn't leave the relationship on a good note. 
               I finished a BA of Arts in BIMM University, just to later discover my love to technology and web development.
+              <br></br><br></br>Now, I cannot imagine a day without a line of code. See some of my work below - more coming soon!
             </p>
           </div>
           <div className="work-description red-box-shadow">
@@ -150,7 +151,7 @@ function Menu(props) {
                 <li>Languages: 
                   <p>HTML5 / CSS / Vanilla JS</p>
                   </li>
-                <li>Frameworks: 
+                <li>Frameworks / Libraries: 
                   <p>React, Bootstrap, SASS & JQuery</p>
                   </li>
                 <li>API's & forms with PHP</li>
