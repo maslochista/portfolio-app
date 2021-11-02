@@ -567,7 +567,6 @@ img {
   background-color: #011627;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   justify-content: center;
   align-items: center;
   color: white;
