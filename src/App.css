@@ -56,7 +56,7 @@ h1 {
   z-index: 30;
 }
 
-#hamburger a:hover {
+#hamburger a:hover , #hamburger a:focus{
   transform: scale(1.08);
 }
 
@@ -92,7 +92,7 @@ h1 {
   box-shadow: 1px 2px 10px -1px #fdfffc;
 }
 
-.menu-wrapper li:hover {
+.menu-wrapper li:hover , .menu-wrapper li:focus{
   background-color: #25e4d1;
   cursor: pointer;
   color: #011627;
@@ -195,7 +195,7 @@ body > #root > div {
   transform: rotate3d(2, 0.5, 0.5, -0.03turn);
 }
 
-.button-contact:hover {
+.button-contact:hover , .button-contact:focus{
   transform: scale(1.03) rotate3d(1, -0.5, -0.5, -0.03turn);
   box-shadow: 1rem -0.2rem 0.2rem #00e6f6;
   background: linear-gradient(45deg, transparent 5%, #f1132d 5%);
@@ -225,7 +225,7 @@ body > #root > div {
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
 
-.button-contact2:hover {
+.button-contact2:hover , .button-contact2:focus{
   transform: scale(1.03);
   color: #fdfffc;
   animation: morph 3s ease-in-out infinite;
@@ -285,7 +285,7 @@ body > #root > div {
   transition: ease-in-out 0.3s 5ms all;
 }
 
-.contact-info a:hover {
+.contact-info a:hover , .contact-info a:focus{
   color: #fdfffc;
 }
 
@@ -297,7 +297,7 @@ body > #root > div {
   transition: ease-in-out 10ms all;
 }
 
-.close-contact:hover {
+.close-contact:hover , .close-contact:focus{
   color: #fdfffc9c;
 }
 
@@ -380,7 +380,7 @@ body > #root > div {
   grid-area: a;
 }
 
-.blue-box-shadow:hover {
+.blue-box-shadow:hover , .blue-box-shadow:focus{
   box-shadow: -0.25rem 0.25rem #25e4d1;
   outline-color: #25e4d1;
 }
@@ -391,7 +391,7 @@ body > #root > div {
   grid-area: b;
 }
 
-.red-box-shadow:hover {
+.red-box-shadow:hover , .red-box-shadow:focus{
   box-shadow: -0.25rem 0.25rem #f1132d;
   outline-color: #f1132d;
   animation: none;
@@ -403,7 +403,7 @@ body > #root > div {
   grid-area: c;
 }
 
-.white-box-shadow:hover {
+.white-box-shadow:hover , .white-box-shadow:focus{
   box-shadow: 0.25rem 0.25rem #fdfffc;
   outline-color: #fdfffc;
 }
@@ -448,7 +448,7 @@ body > #root > div {
   transform: scale(2);
 }
 
-.socials-box a:hover {
+.socials-box a:hover , .socials-box a:focus{
   text-decoration: none;
   cursor: pointer;
   color: #00e6f6;
@@ -539,10 +539,14 @@ img {
   height: 100%;
 }
 
-.project-box:hover .project-flip-inner {
+.project-box:hover .project-flip-inner , .project-box a:focus .project-flip-inner {
   transform: rotateY(180deg);
-  box-shadow: #fdfffc 0rem 0rem 0.5rem;
+  box-shadow: #fdfffc 0rem 0rem 0.8rem;
   -webkit-transform: rotateY(180deg);
+}
+
+.project-box a:focus img {
+  display: none;
 }
 
 .project-front,
@@ -736,10 +740,10 @@ img {
     width: 98%;
     justify-self: start;
   }
-  .project-box:hover .project-flip-inner {
+  .project-box:hover .project-flip-inner, .project-box:focus .project-flip-inner {
     box-shadow: none;
   }
-  .project-box:hover {
+  .project-box:hover , .project-box:focus{
     transform: none;
     cursor: pointer;
     box-shadow: none;

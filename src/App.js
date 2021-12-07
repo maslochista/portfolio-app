@@ -89,6 +89,7 @@ function Menu(props) {
           className={hamburger}
           onClick={handleHamburger}
           title="Open/Close for more information."
+          tabindex="0"
         >
           <span></span>
         </a>
@@ -119,6 +120,7 @@ function Menu(props) {
           <button
             className="close-contact fa fa-times fa-2x"
             onClick={handleContactMe}
+            tabindex="0"
           ></button>
         </main>
       </div>
@@ -138,7 +140,7 @@ function Menu(props) {
             <div className="">JS</div>/<div className="red-text">Java</div>
             <div className="">Script</div>
           </div>
-          <button className="button-contact2" onClick={handleContactMe}>
+          <button className="button-contact2" onClick={handleContactMe} tabindex="0">
             Contact Me!
           </button>
         </main>
@@ -175,6 +177,7 @@ function Menu(props) {
                 target="_blank"
                 rel="noreferrer"
                 title="Open my LinkedIn in a new window"
+                tabindex="0"
               >
                 <i class="fa fa-linkedin" />
               </a>
@@ -183,6 +186,7 @@ function Menu(props) {
                 target="_blank"
                 rel="noreferrer"
                 title="See my smaller Projects in a new window"
+                tabindex="0"
               >
                 <i class="fab fa-codepen" />
               </a>
@@ -191,6 +195,7 @@ function Menu(props) {
                 target="_blank"
                 rel="noreferrer"
                 title="Open my GitHub Account in a new window"
+                tabindex="0"
               >
                 <i class="fa fa-github" />
               </a>
@@ -220,6 +225,7 @@ function Menu(props) {
               href="https://elm-opole.com" 
               target="_blank" 
               rel="noreferrer"
+              tabindex="0"
             >
               <div className="project-flip-inner">
                 <div className="project-front">
@@ -238,6 +244,7 @@ function Menu(props) {
               href="../../uni-find/index.html"
               target="_blank"
               rel="noreferrer"
+              tabindex="0"
             >
               <div className="project-flip-inner">
                 <div className="project-front">
@@ -260,6 +267,7 @@ function Menu(props) {
               href="../../POIS-CHICHE/index.html"
               target="_blank"
               rel="noreferrer"
+              tabindex="0"
             >
               <div className="project-flip-inner">
                 <div className="project-front">
@@ -278,7 +286,7 @@ function Menu(props) {
             </a>
           </div>
           <div className="project-box">
-            <a href="https://ewa-mwarczok.com" target="_blank" rel="noreferrer">
+            <a href="https://ewa-mwarczok.com" target="_blank" rel="noreferrer" tabindex="0">
               <div className="project-flip-inner">
                 <div className="project-front">
                   <img
@@ -315,13 +323,13 @@ function Menu(props) {
         <main className="menu-wrapper">
           <div className="menu-intro">Go on, don't be shy!</div>
           <ul>
-            <a href={menuList[0][1]} onClick={handleAbout}>
+            <a href={menuList[0][1]} onClick={handleAbout} tabindex="0">
               <li>{menuList[0][0]}</li>
             </a>
-            <a href={menuList[1][1]} onClick={handleProjectsSingle}>
+            <a href={menuList[1][1]} onClick={handleProjectsSingle} tabindex="0">
               <li>{menuList[1][0]}</li>
             </a>
-            <a href={menuList[2][1]} target="_blank" rel="noreferrer">
+            <a href={menuList[2][1]} target="_blank" rel="noreferrer" tabindex="0">
               <li>{menuList[2][0]}</li>
             </a>
           </ul>
